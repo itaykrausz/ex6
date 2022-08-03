@@ -9,7 +9,7 @@ Fairy::Fairy() : SpecificCards("Fairy"), m_gain(FAIRY_GAIN){}
 
 void Fairy::applyEncounter(Player& player) const{
     try{
-        Wizard& plr=dynamic_cast<Wizard&>(player);
+        dynamic_cast<Wizard&>(player);
     } catch (const std::bad_cast&){
         printFairyMessage(false);
         return;

@@ -9,7 +9,7 @@ Barfight::Barfight() : SpecificCards("Barfight"), m_damage(BARFIGHT_DAMAGE){}
 
 void Barfight::applyEncounter(Player& player) const{
     try{
-        Fighter& plr=dynamic_cast<Fighter&>(player);
+        dynamic_cast<Fighter&>(player);
     } catch (const std::bad_cast&){
         player.damage(this->m_damage);
         printBarfightMessage(false);

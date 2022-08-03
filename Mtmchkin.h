@@ -23,7 +23,7 @@ public:
     *      A new instance of Mtmchkin.
     */
     Mtmchkin(const std::string fileName);
-    ~Mtmchkin() = delete;
+    ~Mtmchkin() = default;
     Mtmchkin& operator=(const Mtmchkin&) = delete;
     Mtmchkin(const Mtmchkin&) = delete;
     /*
@@ -66,7 +66,7 @@ public:
      * @return
      *      the unique ptr of the card created with the input
      */
-private:
+protected:
     static std::unique_ptr<Card> createCardPtr(const std::string &job, int lineCounter);
 
     /*

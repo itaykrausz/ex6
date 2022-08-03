@@ -9,7 +9,7 @@ Pitfall::Pitfall() : SpecificCards("Pitfall"), m_damage(PITFALL_DAMAGE){}
 
 void Pitfall::applyEncounter(Player& player) const{
     try{
-        Rogue& plr=dynamic_cast<Rogue&>(player);
+        dynamic_cast<Rogue&>(player);
     } catch(const std::bad_cast&){
         player.damage(this->m_damage);
         printPitfallMessage(false);
