@@ -9,7 +9,7 @@
 Gang::Gang() : MonsterCard("Gang"){}
 
 void Gang::applyEncounter(Player &player) const {
-    bool won = false;
+    bool won = true;
     for(int i=0; i<(int)(this->m_gang).size();i++){
         if((*this->m_gang[i]).applyGangEncounter(player)){
             won = true;
