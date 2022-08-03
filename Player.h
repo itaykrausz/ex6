@@ -20,7 +20,7 @@ protected:
 public:
 
     Player(const Player&) = default;
-    ~Player() = default;
+    virtual ~Player() = default;
     Player& operator=(const Player& other) = default;
 
     void levelUp();
