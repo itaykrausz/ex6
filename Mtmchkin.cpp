@@ -63,9 +63,6 @@ void Mtmchkin::updateDeck(const std::string fileName) {
             }
         }
     }
-    if(inGang && source.peek()==EOF){
-        throw DeckFileFormatError(lineCounter+90);
-    }
     if((this->m_deck).size()<LOWER_DECK_BOUND){
         throw DeckFileInvalidSize();
     }
@@ -88,7 +85,7 @@ int Mtmchkin::createGang(std::ifstream &fileRead, int lineCounter, bool& inGang)
         inGang = false;
         return tmpLineCounter;
     }
-    throw DeckFileFormatError(tmpLineCounter);
+    throw DeckFileFormatError(tmpLineCounter+1);
 }
 
 int Mtmchkin::updateTeamSize() {
