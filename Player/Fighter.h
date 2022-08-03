@@ -8,6 +8,7 @@
 
 class Fighter : public Player{
 public:
+    std::string getType() const override;
     Fighter(std::string name);
     int getAttackStrength() const override;
 };

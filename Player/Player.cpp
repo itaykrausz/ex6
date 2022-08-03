@@ -99,10 +99,6 @@ std::string Player::getName() const{
     return this->m_name;
 }
 
-std::string Player::getType() const{
-    return this->m_type;
-}
-
 int Player::getCoins() const{
     return this->m_coins;
 }

@@ -38,7 +38,7 @@ public:
     friend std::ostream& operator<<(std::ostream& os, const Player& player);
 
     std::string getName() const;
-    std::string getType() const;
+    virtual std::string getType() const = 0;
     void loseForce(int force);
     int getCoins() const;
 };

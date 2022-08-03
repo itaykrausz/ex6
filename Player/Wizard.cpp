@@ -16,6 +16,10 @@ void Wizard::heal(int HP){
     m_HP += (2*HP);
 }
 
+std::string Wizard::getType() const {
+    return this->m_type;
+}
+
 
 
 

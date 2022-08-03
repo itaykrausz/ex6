@@ -12,4 +12,6 @@ void Rogue::addCoins(int coins){
     this->m_coins += (2*coins);
 }
 
-
+std::string Rogue::getType() const {
+    return this->m_type;
+}

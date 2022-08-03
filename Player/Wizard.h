@@ -10,6 +10,7 @@ class Wizard : public Player{
 public:
     Wizard(std::string name);
     void heal(int HP) override;
+    std::string getType() const override;
 };
 
 

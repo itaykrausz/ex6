@@ -7,3 +7,7 @@ Fighter::Fighter(std::string name): Player(name,"Fighter") {}
 int Fighter::getAttackStrength() const{
     return m_level + 2*m_force;
 }
+
+std::string Fighter::getType() const {
+    return this->m_type;
+}
