@@ -51,6 +51,9 @@ void Mtmchkin::updateDeck(const std::string fileName) {
         else{
             if(typeOf=="EndGang"){
                 if(!inGang){
+                    if(source.peek()==EOF){
+                        throw DeckFileFormatError(lineCounter+1);
+                    }
                     throw DeckFileFormatError(lineCounter);
                 }
                 else{
@@ -62,9 +65,6 @@ void Mtmchkin::updateDeck(const std::string fileName) {
                 this->m_deck.push_back(std::move(createCardPtr(typeOf,lineCounter)));
             }
         }
-    }
-    if (inGang){
-        throw DeckFileFormatError(lineCounter+1);
     }
     if((this->m_deck).size()<LOWER_DECK_BOUND){
         throw DeckFileInvalidSize();
