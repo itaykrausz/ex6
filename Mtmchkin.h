@@ -23,7 +23,9 @@ public:
     *      A new instance of Mtmchkin.
     */
     Mtmchkin(const std::string fileName);
-    
+    ~Mtmchkin() = delete;
+    Mtmchkin& operator=(const Mtmchkin&) = delete;
+    Mtmchkin(const Mtmchkin&) = delete;
     /*
     * Play the next Round of the game - according to the instruction in the exercise document.
     *
