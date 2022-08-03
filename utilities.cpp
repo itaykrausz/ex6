@@ -180,12 +180,12 @@ void printRoundStartMessage(int roundCount)
 
 void printWinBattle(const string &playerName, const string &monsterName)
 {
-    cout << "Players " << playerName << " has defeated " << monsterName << " and rose 1 Level!" << endl;
+    cout << "Player " << playerName << " has defeated " << monsterName << " and rose 1 Level!" << endl;
 }
 
 void printLossBattle(const string &playerName, const string &monsterName)
 {
-    cout << "Players " << playerName << " has been defeated by a " << monsterName << "." << endl;
+    cout << "Player " << playerName << " has been defeated by a " << monsterName << "." << endl;
 }
 
 void printLeaderBoardStartMessage()
