@@ -66,6 +66,7 @@ public:
      * @return
      *      the unique ptr of the card created with the input
      */
+private:
     static std::unique_ptr<Card> createCardPtr(const std::string &job, int lineCounter);
 
     /*
@@ -109,7 +110,5 @@ public:
      */
     int createGang(std::ifstream& fileRead, int lineCounter, bool& fuck);
     };
-
-
 
 #endif /* MTMCHKIN_H_ */
