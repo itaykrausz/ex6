@@ -64,7 +64,7 @@ void Mtmchkin::updateDeck(const std::string fileName) {
         }
     }
     if(inGang && source.peek()==EOF){
-        throw DeckFileFormatError(lineCounter+1);
+        throw DeckFileFormatError(lineCounter+90);
     }
     if((this->m_deck).size()<LOWER_DECK_BOUND){
         throw DeckFileInvalidSize();
