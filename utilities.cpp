@@ -10,7 +10,7 @@ using std::ostream;
 using std::endl;
 
 /* ---------------------------------------------------------------------------------------------- */
-// ----------------       Print functions for Player class          -----------------------
+// ----------------       Print functions for Players class          -----------------------
 
 void printPlayerDetails(ostream &os, const string &name, const string &job, int level, int force, int HP, int coins)
 {
@@ -180,18 +180,18 @@ void printRoundStartMessage(int roundCount)
 
 void printWinBattle(const string &playerName, const string &monsterName)
 {
-    cout << "Player " << playerName << " has defeated " << monsterName << " and rose 1 Level!" << endl;
+    cout << "Players " << playerName << " has defeated " << monsterName << " and rose 1 Level!" << endl;
 }
 
 void printLossBattle(const string &playerName, const string &monsterName)
 {
-    cout << "Player " << playerName << " has been defeated by a " << monsterName << "." << endl;
+    cout << "Players " << playerName << " has been defeated by a " << monsterName << "." << endl;
 }
 
 void printLeaderBoardStartMessage()
 {
     cout << endl << "The current ranking of the Team:" << endl;
-    cout << "Ranking    Player Name     Level     Force HP    Coins Job" << endl;
+    cout << "Ranking    Players Name     Level     Force HP    Coins Job" << endl;
 }
 
 void printPlayerLeaderBoard(int ranking, const Player& player)
