@@ -63,6 +63,9 @@ void Mtmchkin::updateDeck(const std::string fileName) {
             }
         }
     }
+    if (inGang){
+        throw DeckFileFormatError(lineCounter+1);
+    }
     if((this->m_deck).size()<LOWER_DECK_BOUND){
         throw DeckFileInvalidSize();
     }
