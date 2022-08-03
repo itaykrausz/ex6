@@ -1,6 +1,12 @@
-#include <iostream>
-
-int main() {
-    std::cout << "Hello, World!" << std::endl;
-    return 0;
+//
+// Created by itayk on 11/06/2022.
+//
+#include "../Mtmchkin.h"
+int main(){
+    const int MAX_NUMBER_OF_ROUNDS = 100;
+    Mtmchkin game("deck.txt");
+    while(!game.isGameOver() && game.getNumberOfRounds() < MAX_NUMBER_OF_ROUNDS){
+        game.playRound();
+    }
+    game.printLeaderBoard();
 }
