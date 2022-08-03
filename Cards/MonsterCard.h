@@ -16,5 +16,6 @@ public:
     std::ostream& print(std::ostream& os) const override;
     void applyLoss(Player &player) const;
     bool applyGangEncounter(Player &player);
+    void applyEncounter(Player &player) const override;
 };
 #endif //EX4_MONSTERCARD_H

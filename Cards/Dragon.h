@@ -10,6 +10,5 @@
 class Dragon : public MonsterCard{
 public:
     Dragon();
-    void applyEncounter(Player& player) const override;
 };
 #endif //EX4_DRAGON_H

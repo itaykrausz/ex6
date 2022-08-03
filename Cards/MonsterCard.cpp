@@ -73,3 +73,14 @@ bool MonsterCard::applyGangEncounter(Player &player) {
     player.addCoins(this->m_loot);
     return true;
 }
+
+void MonsterCard::applyEncounter(Player &player) const {
+    if(player.getAttackStrength()<this->m_force){
+        applyLoss(player);
+    }
+    else{
+        player.levelUp();
+        player.addCoins(this->m_loot);
+        printWinBattle(player.getName(), this->m_name);
+    }
+}

@@ -8,8 +8,7 @@
 #include <functional>
 
 #include "Exception.h"
-#include "Player/Player.h"
-
+#include "Players/Player.h"
 
 /* ---------------------------------------------------------------------------------------------- */
 // ----------------       Print functions for Players class          -----------------------

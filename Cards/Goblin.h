@@ -8,6 +8,5 @@
 class Goblin : public MonsterCard{
 public:
     Goblin();
-    void applyEncounter(Player& player) const override;
 };
 #endif //EX4_GOBLIN_H
